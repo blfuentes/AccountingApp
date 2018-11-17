@@ -16,23 +16,23 @@ export class UserService {
     this.selectedUser = new User();
    }
 
-  getUsers(){
+  getUsers() {
     return this.http.get(this.URL_API);
   }
 
-  getUser(_id: string){
+  getUser(_id: string) {
     return this.http.get(this.URL_API + `/${_id}`);
   }
 
-  postUser(user: User){
+  postUser(user: User) {
     return this.http.post(this.URL_API, user);
   }
 
-  putUser(user: User){
+  putUser(user: User) {
     return this.http.put(this.URL_API + `/${user._id}`, user);
   }
 
-  deleteUser(_id: string){
+  deleteUser(_id: string) {
     return this.http.delete(this.URL_API + `/${_id}`);
   }
 }
