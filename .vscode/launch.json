@@ -19,7 +19,7 @@
             "request": "launch",
             "name": "Launch Chrome (FrontEnd)",
             "url": "http://localhost:4200",
-            "webRoot": "${workspaceFolder}"
+            "webRoot": "${workspaceFolder}/src/frontend"
         }
     ]
 }
